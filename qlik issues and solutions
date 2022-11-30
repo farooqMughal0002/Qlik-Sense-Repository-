@@ -1,0 +1,10 @@
+I am having a issue when i start a qlik sense enterprise versions the repository service stop after few seconds.
+i look in to logs (C:\ProgramData\Qlik\Sense\Log\Repository\System\) of qlik sense there i found an issue (ResultText=Error: Failed to initialize usage of Windows Performance Counters. Make sure that performance counters are enabled or try rebuilding them with "lodctr /R")
+
+
+++++++Solution++++
+I run cmd as Administrator
+and run following command:
+"lodctr /R"
+
+by running above command i restart my qlik sense services and now its working perfectly
